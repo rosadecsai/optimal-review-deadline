@@ -1,0 +1,142 @@
+== build_dataset ==
+2018: 1018 envíos, 2967 informes, pico 2017-11-27 (plazo efectivo 2017-11-27), día del plazo 51.7%, últimas 48 h 51.7%, tardíos 29.2%, conf. conocida 100.0%
+2019: 1579 envíos, 4764 informes, pico 2018-11-02 (plazo efectivo 2018-11-02), día del plazo 41.9%, últimas 48 h 41.9%, tardíos 36.6%, conf. conocida 100.0%
+2020: 2594 envíos, 7775 informes, pico 2019-10-23 (plazo efectivo 2019-10-23), día del plazo 42.7%, últimas 48 h 42.7%, tardíos 33.9%, conf. conocida 0.0%
+2021: 3014 envíos, 11508 informes, pico 2020-10-28 (plazo efectivo 2020-10-28), día del plazo 50.1%, últimas 48 h 50.1%, tardíos 25.4%, conf. conocida 100.0%
+2022: 3422 envíos, 13161 informes, pico 2021-11-02 (plazo efectivo 2021-11-02), día del plazo 48.8%, últimas 48 h 48.8%, tardíos 21.3%, conf. conocida 100.0%
+2023: 4955 envíos, 18579 informes, pico 2022-10-24 (plazo efectivo 2022-10-24), día del plazo 45.7%, últimas 48 h 45.7%, tardíos 34.3%, conf. conocida 100.0%
+2024: 7404 envíos, 28028 informes, pico 2023-10-31 (plazo efectivo 2023-10-31), día del plazo 41.7%, últimas 48 h 41.7%, tardíos 27.1%, conf. conocida 100.0%
+2025: 11672 envíos, 46748 informes, pico 2024-11-04 (plazo efectivo 2024-11-03), día del plazo 41.7%, últimas 48 h 41.7%, tardíos 16.0%, conf. conocida 100.0%
+2026: 19814 envíos, 75859 informes, pico 2025-11-01 (plazo efectivo 2025-10-31), día del plazo 42.0%, últimas 48 h 42.0%, tardíos 17.8%, conf. conocida 100.0%
+   (14 s, rc=0)
+== exp_timing (E1-E3) ==
+vs const = 0.648
+E2 2019: pre 0.215 atom 0.419 late 0.366 gamma 0.230 [0.213,0.249] (half-life 3.02 d) mu 0.272; LLR/obs anchored vs const = 0.510
+E2 2020: pre 0.234 atom 0.427 late 0.339 gamma 0.284 [0.267,0.302] (half-life 2.44 d) mu 0.195; LLR/obs anchored vs const = 0.669
+E2 2021: pre 0.245 atom 0.501 late 0.254 gamma 0.284 [0.268,0.299] (half-life 2.44 d) mu 0.317; LLR/obs anchored vs const = 0.475
+E2 2022: pre 0.298 atom 0.488 late 0.213 gamma 0.237 [0.228,0.247] (half-life 2.92 d) mu 0.385; LLR/obs anchored vs const = 0.485
+E2 2023: pre 0.200 atom 0.457 late 0.343 gamma 0.281 [0.267,0.297] (half-life 2.47 d) mu 0.244; LLR/obs anchored vs const = 0.275
+E2 2024: pre 0.312 atom 0.417 late 0.271 gamma 0.233 [0.227,0.240] (half-life 2.97 d) mu 0.264; LLR/obs anchored vs const = 0.554
+E2 2025: pre 0.423 atom 0.417 late 0.160 gamma 0.194 [0.190,0.198] (half-life 3.57 d) mu 0.422; LLR/obs anchored vs const = 0.392
+E2 2026: pre 0.402 atom 0.420 late 0.178 gamma 0.229 [0.226,0.232] (half-life 3.03 d) mu 0.377; LLR/obs anchored vs const = 0.540
+   year     T      n  s_q25  x_q25  s_q50  x_q50  s_q75  x_q75  s_q90  x_q90  share_atom  share_late  share_first_week  gamma
+0  2020  20.0   7775   0.87  20.13   1.44  19.56   2.77  18.23   6.56  14.44        0.43        0.34              0.02   0.28
+1  2021  16.0  11508   0.80  16.20   1.32  15.68   2.66  14.34   5.91  11.09        0.50        0.25              0.04   0.28
+2  2022  19.0  13161   0.69  19.31   1.39  18.61   3.39  16.61   7.65  12.35        0.49        0.21              0.03   0.24
+3  2023  12.0  18579   0.54  12.46   1.17  11.83   2.57  10.43   5.32   7.68        0.46        0.34              0.08   0.28
+4  2024  21.0  28028   0.65  21.35   1.64  20.36   3.71  18.29   8.39  13.61        0.42        0.27              0.03   0.23
+5  2025  20.0  46740   0.65  20.35   2.03  18.97   5.21  15.79   9.51  11.49        0.42        0.16              0.05   0.19
+6  2026  21.0  75859   0.70  21.30   1.93  20.07   4.71  17.29   9.05  12.95        0.42        0.18              0.03   0.23
+          stat  slope_per_day     lo     hi  parkinson_null  se_between_years
+0        s_q25          0.013  0.010  0.015             0.0             0.014
+1        x_q25          0.987  0.985  0.990             1.0             0.014
+2        s_q50          0.071  0.067  0.075             0.0             0.029
+3        x_q50          0.929  0.925  0.933             1.0             0.029
+4        s_q75          0.200  0.188  0.214             0.0             0.109
+5        x_q75          0.800  0.786  0.812             1.0             0.109
+6        s_q90          0.395  0.362  0.415             0.0             0.126
+7        x_q90          0.605  0.585  0.638             1.0             0.126
+8   share_atom         -0.006 -0.007 -0.005             NaN             0.004
+9   share_late         -0.012 -0.013 -0.011             NaN             0.008
+10       gamma         -0.006 -0.008 -0.005             NaN             0.004
+   (140 s, rc=0)
+== exp_quality (E4-E6) ==
+f=0.55,s=0.63,c=0.50,n3=19469) early:(f=0.14,s=1.01,c=0.35,n3=997) atom:(f=0.72,s=0.60,c=0.60,n3=3713) late:(f=0.91,s=0.63,c=0.81,n3=674)
+pair    all  atom-atom  atom-late  early-atom  early-early  early-late  early-mid  late-late  mid-atom  mid-late  mid-mid
+year                                                                                                                     
+2018  0.372      0.343      0.377       0.340        0.030       0.306      0.102      0.487     0.355     0.405    0.484
+2019  0.398      0.386      0.396       0.453        0.428       0.407      0.302      0.385     0.366     0.409    0.584
+2020  0.341      0.373      0.347       0.352        0.237       0.350      0.338      0.267     0.364     0.303    0.511
+2021  0.319      0.346      0.275       0.357        0.350       0.315      0.295      0.271     0.353     0.299    0.336
+2022  0.367      0.369      0.366       0.350        0.370       0.364      0.347      0.366     0.384     0.374    0.393
+2023  0.355      0.369      0.352       0.393        0.427       0.354      0.488      0.297     0.361     0.326    0.378
+2024  0.332      0.321      0.318       0.345        0.368       0.338      0.333      0.292     0.353     0.346    0.384
+2025  0.356      0.346      0.330       0.365        0.375       0.348      0.373      0.326     0.366     0.342    0.371
+2026  0.109      0.113      0.096       0.112        0.108       0.099      0.131      0.116     0.096     0.117    0.115
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  return fnb._ureduce(a,
+   (229 s, rc=0)
+== exp_model (E7) ==
+e variant 40)  V*=0.562  loss@7=37.60% @14=16.08% @28=1.98% @42=0.01%
+Journal, L=0.1, δ=0.005, η=1.3     T*= 33 [33,33] (late-slope variant 34)  V*=0.507  loss@7=32.56% @14=12.10% @28=0.48% @42=0.95%
+Journal, L=0.1, δ=0.01, η=1.3      T*= 25 [25,25] (late-slope variant 27)  V*=0.423  loss@7=25.23% @14=6.87% @28=0.20% @42=5.56%
+Journal, L=0.3, δ=0.0025, η=1.3    T*= 43 [43,43] (late-slope variant 42)  V*=0.497  loss@7=44.23% @14=19.29% @28=2.62% @42=0.00%
+Journal, L=0.3, δ=0.005, η=1.3     T*= 35 [35,35] (late-slope variant 34)  V*=0.439  loss@7=38.93% @14=15.04% @28=0.85% @42=0.68%
+Journal, L=0.3, δ=0.01, η=1.3      T*= 27 [27,27] (late-slope variant 29)  V*=0.350  loss@7=31.06% @14=9.28% @28=0.03% @42=4.76%
+Journal, L=0.6, δ=0.0025, η=1.3    T*= 44 [44,44] (late-slope variant 44)  V*=0.399  loss@7=54.22% @14=24.16% @28=3.64% @42=0.05%
+Journal, L=0.6, δ=0.005, η=1.3     T*= 37 [37,37] (late-slope variant 36)  V*=0.338  loss@7=48.59% @14=19.58% @28=1.53% @42=0.39%
+Journal, L=0.6, δ=0.01, η=1.3      T*= 29 [29,29] (late-slope variant 30)  V*=0.242  loss@7=40.04% @14=13.13% @28=0.03% @42=3.78%
+                                     params  T_closed_form  T_numeric  abs_diff
+0                                        {}        31.7493    31.7488    0.0004
+1                           {'delta': 0.01}        24.5489    24.5488    0.0000
+2                                {'L': 0.6}        33.9144    33.9144    0.0001
+3                  {'lam_a': 0.2, 'm': 2.0}        19.5097    19.5095    0.0002
+4  {'qbar': 1.5, 'delta': 0.0025, 'm': 1.5}        42.3290    42.3294    0.0003
+lam_a     0.0500               0.0988               0.2000              
+delta     0.0025 0.0050 0.0100 0.0025 0.0050 0.0100 0.0025 0.0050 0.0100
+Delta eta                                                               
+0.050 0.0   60.0   49.0   36.0   40.0   32.0   25.0   23.0   20.0   16.0
+      1.3   60.0   51.0   37.0   41.0   34.0   26.0   26.0   22.0   18.0
+0.085 0.0   60.0   49.0   35.0   40.0   32.0   25.0   24.0   20.0   16.0
+      1.3   60.0   51.0   37.0   42.0   35.0   27.0   29.0   23.0   19.0
+0.150 0.0   60.0   49.0   35.0   39.0   32.0   25.0   24.0   20.0   16.0
+      1.3   60.0   52.0   38.0   44.0   36.0   28.0   32.0   26.0   21.0
+0.300 0.0   60.0   47.0   34.0   39.0   32.0   24.0   24.0   20.0   16.0
+      1.3   60.0   54.0   39.0   49.0   39.0   30.0   41.0   31.0   24.0
+delta      0.0025  0.0050  0.0100
+Delta eta                        
+0.050 0.0     5.0     3.0     3.0
+      1.3    19.0    15.0    11.0
+0.085 0.0     7.0     5.0     3.0
+      1.3    24.0    18.0    14.0
+0.150 0.0     8.0     6.0     5.0
+      1.3    30.0    23.0    17.0
+0.300 0.0    10.0     8.0     6.0
+      1.3    40.0    30.0    23.0
+    T  share_atom  share_late  mean_s  q50_s
+0  12       0.186       0.140   3.984    4.0
+1  16       0.157       0.123   5.697    6.0
+2  21       0.136       0.109   7.794    7.0
+3  28       0.117       0.098  10.676   10.0
+4  45       0.095       0.082  17.513   16.0
+   (184 s, rc=0)
+== proofs_sympy ==
+OK   P1 riesgo h(s) idéntico para T=12 y T=45 en los días comunes
+OK   P1 riesgo creciente hacia el plazo (s de 11 a 0)
+OK   P2 dE[q]/dT = Δ(1−π)λe^{−λT} > 0
+OK   P2 d²E[q]/dT² = −Δ(1−π)λ²e^{−λT} < 0
+OK   P2 límite T→∞: q̄ − Δπφ
+OK   P3 la CPO se reduce a e^{−λT}[λ(q̄+L+δm)+δ−λδT] = δ
+OK   P3 T* de forma cerrada satisface la CPO (3 puntos numéricos, |resid|<1e-9)
+OK   P3 V''(T*) < 0 y dV cambia de signo una sola vez (unicidad)
+OK   P3 forma cerrada de model.py coincide con la simbólica
+OK   P4 dT*/dδ < 0 en 300 puntos aleatorios
+OK   P4 dT*/dL > 0
+OK   P4 dT*/dq̄ > 0
+OK   P4 dT*/dλ_a < 0
+signos (min, max, n): {'delta': (np.float64(-1.0), np.float64(-1.0), 300), 'L': (np.float64(1.0), np.float64(1.0), 300), 'qbar': (np.float64(1.0), np.float64(1.0), 300), 'lambda_a': (np.float64(-1.0), np.float64(-1.0), 300)}
+
+13/13 comprobaciones superadas
+   (33 s, rc=0)
+Cadena completa.

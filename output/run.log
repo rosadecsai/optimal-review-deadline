@@ -1,0 +1,290 @@
+
+== build_dataset ==
+2018: 1018 envíos, 2967 informes, pico 2017-11-27 (plazo efectivo 2017-11-27), día del plazo 51.7%, últimas 48 h 51.7%, tardíos 29.2%, conf. conocida 100.0%
+2019: 1579 envíos, 4764 informes, pico 2018-11-02 (plazo efectivo 2018-11-02), día del plazo 41.9%, últimas 48 h 41.9%, tardíos 36.6%, conf. conocida 100.0%
+2020: 2594 envíos, 7775 informes, pico 2019-10-23 (plazo efectivo 2019-10-23), día del plazo 42.7%, últimas 48 h 42.7%, tardíos 33.9%, conf. conocida 0.0%
+2021: 3014 envíos, 11508 informes, pico 2020-10-28 (plazo efectivo 2020-10-28), día del plazo 50.1%, últimas 48 h 50.1%, tardíos 25.4%, conf. conocida 100.0%
+2022: 3422 envíos, 13161 informes, pico 2021-11-02 (plazo efectivo 2021-11-02), día del plazo 48.8%, últimas 48 h 48.8%, tardíos 21.3%, conf. conocida 100.0%
+2023: 4955 envíos, 18579 informes, pico 2022-10-24 (plazo efectivo 2022-10-24), día del plazo 45.7%, últimas 48 h 45.7%, tardíos 34.3%, conf. conocida 100.0%
+2024: 7404 envíos, 28028 informes, pico 2023-10-31 (plazo efectivo 2023-10-31), día del plazo 41.7%, últimas 48 h 41.7%, tardíos 27.1%, conf. conocida 100.0%
+2025: 11672 envíos, 46748 informes, pico 2024-11-04 (plazo efectivo 2024-11-03), día del plazo 41.7%, últimas 48 h 41.7%, tardíos 16.0%, conf. conocida 100.0%
+2026: 19814 envíos, 75859 informes, pico 2025-11-01 (plazo efectivo 2025-10-31), día del plazo 42.0%, últimas 48 h 42.0%, tardíos 17.8%, conf. conocida 100.0%
+
+== exp_timing (E1-E3) ==
+   year  window_official  n_reviews  median_days_before  share_pre  share_deadline_date  share_late  mean_lateness_days  share_late_gt7d secondary_peaks_days_after
+0  2018              NaN       2967               0.642      0.191                0.517       0.292               9.405            0.291                           
+1  2019              NaN       4764               0.581      0.215                0.419       0.366               3.672            0.152                           
+2  2020             20.0       7775               0.863      0.234                0.427       0.339               5.122            0.291                           
+3  2021             16.0      11508               0.909      0.245                0.501       0.254               3.157            0.163                           
+4  2022             18.0      13161               0.916      0.298                0.488       0.213               2.595            0.037                           
+5  2023             12.0      18579               0.512      0.200                0.457       0.343               4.092            0.226                           
+6  2024             21.0      28028               0.847      0.312                0.417       0.271               3.786            0.165                           
+7  2025             20.0      46740               1.364      0.423                0.417       0.160               2.372            0.051                           
+8  2026             22.0      75859               1.221      0.402                0.420       0.178               2.651            0.097                           
+E2 2018: pre 0.191 atom 0.517 late 0.292 gamma 0.289 [0.262,0.327] (half-life 2.40 d) mu 0.106; LLR/obs anchored vs const = 0.648
+E2 2019: pre 0.215 atom 0.419 late 0.366 gamma 0.230 [0.213,0.249] (half-life 3.02 d) mu 0.272; LLR/obs anchored vs const = 0.510
+E2 2020: pre 0.234 atom 0.427 late 0.339 gamma 0.284 [0.267,0.302] (half-life 2.44 d) mu 0.195; LLR/obs anchored vs const = 0.669
+E2 2021: pre 0.245 atom 0.501 late 0.254 gamma 0.284 [0.268,0.299] (half-life 2.44 d) mu 0.317; LLR/obs anchored vs const = 0.475
+E2 2022: pre 0.298 atom 0.488 late 0.213 gamma 0.237 [0.228,0.247] (half-life 2.92 d) mu 0.385; LLR/obs anchored vs const = 0.485
+E2 2023: pre 0.200 atom 0.457 late 0.343 gamma 0.281 [0.267,0.297] (half-life 2.47 d) mu 0.244; LLR/obs anchored vs const = 0.275
+E2 2024: pre 0.312 atom 0.417 late 0.271 gamma 0.233 [0.227,0.240] (half-life 2.97 d) mu 0.264; LLR/obs anchored vs const = 0.554
+E2 2025: pre 0.423 atom 0.417 late 0.160 gamma 0.194 [0.190,0.198] (half-life 3.57 d) mu 0.422; LLR/obs anchored vs const = 0.392
+E2 2026: pre 0.402 atom 0.420 late 0.178 gamma 0.229 [0.226,0.232] (half-life 3.03 d) mu 0.377; LLR/obs anchored vs const = 0.540
+   year     T      n  s_q25  x_q25  s_q50  x_q50  s_q75  x_q75  s_q90  x_q90  share_atom  share_late  share_first_week  gamma
+0  2020  20.0   7775   0.87  20.13   1.44  19.56   2.77  18.23   6.56  14.44        0.43        0.34              0.02   0.28
+1  2021  16.0  11508   0.80  16.20   1.32  15.68   2.66  14.34   5.91  11.09        0.50        0.25              0.04   0.28
+2  2022  19.0  13161   0.69  19.31   1.39  18.61   3.39  16.61   7.65  12.35        0.49        0.21              0.03   0.24
+3  2023  12.0  18579   0.54  12.46   1.17  11.83   2.57  10.43   5.32   7.68        0.46        0.34              0.08   0.28
+4  2024  21.0  28028   0.65  21.35   1.64  20.36   3.71  18.29   8.39  13.61        0.42        0.27              0.03   0.23
+5  2025  20.0  46740   0.65  20.35   2.03  18.97   5.21  15.79   9.51  11.49        0.42        0.16              0.05   0.19
+6  2026  21.0  75859   0.70  21.30   1.93  20.07   4.71  17.29   9.05  12.95        0.42        0.18              0.03   0.23
+          stat  slope_per_day     lo     hi  parkinson_null  se_between_years
+0        s_q25          0.013  0.010  0.015             0.0             0.014
+1        x_q25          0.987  0.985  0.990             1.0             0.014
+2        s_q50          0.071  0.067  0.075             0.0             0.029
+3        x_q50          0.929  0.925  0.933             1.0             0.029
+4        s_q75          0.200  0.188  0.214             0.0             0.109
+5        x_q75          0.800  0.786  0.812             1.0             0.109
+6        s_q90          0.395  0.362  0.415             0.0             0.126
+7        x_q90          0.605  0.585  0.638             1.0             0.126
+8   share_atom         -0.006 -0.007 -0.005             NaN             0.004
+9   share_late         -0.012 -0.013 -0.011             NaN             0.008
+10       gamma         -0.006 -0.008 -0.005             NaN             0.004
+
+== exp_quality (E4-E6) ==
+         outcome      bin    coef     se      p  pct_effect       n  mean_early
+0      log_words      mid  -0.040  0.005  0.000      -3.920  209377       6.029
+1      log_words  last48h  -0.051  0.005  0.000      -4.971  209377       6.029
+2      log_words  last24h  -0.085  0.004  0.000      -8.186  209377       6.029
+3      log_words     late  -0.095  0.005  0.000      -9.067  209377       6.029
+4        bullets      mid  -0.274  0.056  0.000         NaN  209377       7.172
+5        bullets  last48h  -0.353  0.056  0.000         NaN  209377       7.172
+6        bullets  last24h  -0.541  0.048  0.000         NaN  209377       7.172
+7        bullets     late  -0.725  0.052  0.000         NaN  209377       7.172
+8         qmarks      mid  -0.162  0.036  0.000         NaN  209377       3.469
+9         qmarks  last48h  -0.204  0.036  0.000         NaN  209377       3.469
+10        qmarks  last24h  -0.336  0.031  0.000         NaN  209377       3.469
+11        qmarks     late  -0.385  0.033  0.000         NaN  209377       3.469
+12    confidence      mid  -0.041  0.008  0.000         NaN  201602       3.749
+13    confidence  last48h  -0.077  0.008  0.000         NaN  201602       3.749
+14    confidence  last24h  -0.124  0.007  0.000         NaN  201602       3.749
+15    confidence     late  -0.124  0.007  0.000         NaN  201602       3.749
+16         score      mid   0.079  0.015  0.000         NaN  209377       4.590
+17         score  last48h   0.100  0.015  0.000         NaN  209377       4.590
+18         score  last24h   0.170  0.013  0.000         NaN  209377       4.590
+19         score     late   0.111  0.014  0.000         NaN  209377       4.590
+20     dev_panel      mid  -0.009  0.010  0.367         NaN  209377       1.367
+21     dev_panel  last48h  -0.017  0.010  0.087         NaN  209377       1.367
+22     dev_panel  last24h  -0.010  0.008  0.217         NaN  209377       1.367
+23     dev_panel     late  -0.007  0.009  0.455         NaN  209377       1.367
+24    words_weak      mid -15.214  1.501  0.000         NaN  209377     192.637
+25    words_weak  last48h -18.990  1.439  0.000         NaN  209377     192.637
+26    words_weak  last24h -25.667  1.280  0.000         NaN  209377     192.637
+27    words_weak     late -23.406  1.388  0.000         NaN  209377     192.637
+28   words_quest      mid  -4.820  0.970  0.000         NaN  209377      75.993
+29   words_quest  last48h  -5.344  0.919  0.000         NaN  209377      75.993
+30   words_quest  last24h  -8.880  0.807  0.000         NaN  209377      75.993
+31   words_quest     late -10.679  0.862  0.000         NaN  209377      75.993
+32  thoroughness      mid  -0.048  0.045  0.281         NaN    7580       2.439
+33  thoroughness  last48h   0.075  0.038  0.049         NaN    7580       2.439
+34  thoroughness  last24h  -0.008  0.041  0.844         NaN    7580       2.439
+35  thoroughness     late   0.001  0.038  0.985         NaN    7580       2.439
+36   check_deriv      mid   0.027  0.050  0.589         NaN    5971       1.200
+37   check_deriv  last48h  -0.011  0.043  0.794         NaN    5971       1.200
+38   check_deriv  last24h  -0.051  0.043  0.235         NaN    5971       1.200
+39   check_deriv     late  -0.098  0.040  0.014         NaN    5971       1.200
+40   check_exper      mid   0.008  0.038  0.835         NaN    7577       1.391
+41   check_exper  last48h  -0.029  0.033  0.384         NaN    7577       1.391
+42   check_exper  last24h  -0.053  0.034  0.125         NaN    7577       1.391
+43   check_exper     late  -0.066  0.032  0.037         NaN    7577       1.391
+   year     T    words  confidence  dev_panel  share_atom  share_late  mean_lateness  penalty_logwords_last24h  penalty_conf_last24h  penalty_dev_last24h
+0  2018   NaN  373.119       3.817      1.094       0.517       0.292          9.391                    -0.051                -0.023               -0.177
+1  2019   NaN  403.588       3.774      1.027       0.419       0.366          3.672                    -0.044                -0.177               -0.142
+2  2020  20.0  408.421         NaN      1.584       0.427       0.339          5.122                    -0.132                   NaN               -0.088
+3  2021  16.0  467.988       3.735      1.022       0.501       0.254          3.157                    -0.114                -0.107               -0.038
+4  2022  18.0  507.854       3.705      1.215       0.488       0.213          2.595                    -0.101                -0.146               -0.057
+5  2023  12.0  477.538       3.625      1.275       0.457       0.343          4.092                    -0.125                -0.138               -0.024
+6  2024  21.0  425.379       3.642      1.245       0.417       0.271          3.786                    -0.060                -0.194               -0.019
+7  2025  20.0  446.239       3.668      1.208       0.417       0.160          2.372                    -0.066                -0.152               -0.000
+8  2026  22.0  439.540       3.625      1.549       0.420       0.178          2.651                    -0.075                -0.158                0.017
+                        stat         years   dT    diff     se       z
+0                      words  2023 vs 2022 -7.0 -30.316  3.445  -8.800
+1                      words  2023 vs 2024 -9.0  52.158  2.623  19.886
+2                      words  2025 vs 2024 -1.0  20.860  1.925  10.834
+3                      words  2026 vs 2025  1.0  -6.699  1.433  -4.673
+4                      words  2021 vs 2020 -4.0  59.567  4.335  13.741
+5                 confidence  2023 vs 2022 -7.0  -0.080  0.011  -7.444
+6                 confidence  2023 vs 2024 -9.0  -0.017  0.009  -1.884
+7                 confidence  2025 vs 2024 -1.0   0.026  0.007   3.590
+8                 confidence  2026 vs 2025  1.0  -0.043  0.006  -7.660
+9                 confidence  2021 vs 2020 -4.0     NaN    NaN     NaN
+10                 dev_panel  2023 vs 2022 -7.0   0.060  0.015   4.121
+11                 dev_panel  2023 vs 2024 -9.0   0.030  0.012   2.506
+12                 dev_panel  2025 vs 2024 -1.0  -0.037  0.009  -3.937
+13                 dev_panel  2026 vs 2025  1.0   0.341  0.008  42.874
+14                 dev_panel  2021 vs 2020 -4.0  -0.562  0.023 -24.836
+15                  sd_score  2023 vs 2022 -7.0   0.016  0.015   1.071
+16                  sd_score  2023 vs 2024 -9.0   0.064  0.012   5.207
+17                  sd_score  2025 vs 2024 -1.0  -0.013  0.010  -1.349
+18                  sd_score  2026 vs 2025  1.0   0.154  0.008  19.692
+19                  sd_score  2021 vs 2020 -4.0  -0.779  0.016 -48.190
+20                share_atom  2023 vs 2022 -7.0  -0.032  0.006  -5.291
+21                share_atom  2023 vs 2024 -9.0   0.040  0.005   8.427
+22                share_atom  2025 vs 2024 -1.0   0.000  0.004   0.056
+23                share_atom  2026 vs 2025  1.0   0.003  0.003   0.982
+24                share_atom  2021 vs 2020 -4.0   0.073  0.007  10.475
+25                share_late  2023 vs 2022 -7.0   0.130  0.006  23.263
+26                share_late  2023 vs 2024 -9.0   0.072  0.005  15.175
+27                share_late  2025 vs 2024 -1.0  -0.111  0.003 -31.905
+28                share_late  2026 vs 2025  1.0   0.018  0.002   7.600
+29                share_late  2021 vs 2020 -4.0  -0.085  0.007 -12.821
+30             mean_lateness  2023 vs 2022 -7.0   1.497  0.086  17.475
+31             mean_lateness  2023 vs 2024 -9.0   0.306  0.081   3.788
+32             mean_lateness  2025 vs 2024 -1.0  -1.413  0.063 -22.440
+33             mean_lateness  2026 vs 2025  1.0   0.279  0.041   6.777
+34             mean_lateness  2021 vs 2020 -4.0  -1.965  0.128 -15.345
+35  penalty_logwords_last24h  2023 vs 2022 -7.0  -0.024  0.019  -1.242
+36  penalty_logwords_last24h  2023 vs 2024 -9.0  -0.065  0.017  -3.799
+37  penalty_logwords_last24h  2025 vs 2024 -1.0  -0.006  0.011  -0.528
+38  penalty_logwords_last24h  2026 vs 2025  1.0  -0.009  0.008  -1.141
+39  penalty_logwords_last24h  2021 vs 2020 -4.0   0.018  0.030   0.625
+40      penalty_conf_last24h  2023 vs 2022 -7.0   0.008  0.029   0.263
+41      penalty_conf_last24h  2023 vs 2024 -9.0   0.056  0.025   2.197
+42      penalty_conf_last24h  2025 vs 2024 -1.0   0.042  0.017   2.405
+43      penalty_conf_last24h  2026 vs 2025  1.0  -0.006  0.012  -0.491
+44      penalty_conf_last24h  2021 vs 2020 -4.0     NaN    NaN     NaN
+45       penalty_dev_last24h  2023 vs 2022 -7.0   0.032  0.035   0.914
+46       penalty_dev_last24h  2023 vs 2024 -9.0  -0.006  0.031  -0.185
+47       penalty_dev_last24h  2025 vs 2024 -1.0   0.018  0.023   0.805
+48       penalty_dev_last24h  2026 vs 2025  1.0   0.017  0.017   0.981
+49       penalty_dev_last24h  2021 vs 2020 -4.0   0.051  0.067   0.750
+E6 2018: kappa all 0.372 early-early 0.030 atom-atom 0.343 early-late 0.306 | all:(f=0.59,s=0.74,c=0.83,n3=981)
+E6 2019: kappa all 0.398 early-early 0.428 atom-atom 0.386 early-late 0.407 | all:(f=0.60,s=0.76,c=0.85,n3=1553)
+E6 2020: kappa all 0.341 early-early 0.237 atom-atom 0.373 early-late 0.350 | all:(f=0.60,s=0.76,c=0.79,n3=2468)
+E6 2021: kappa all 0.319 early-early 0.350 atom-atom 0.346 early-late 0.315 | all:(f=0.55,s=0.73,c=0.79,n3=2979) atom:(f=0.45,s=0.78,c=0.75,n3=874)
+E6 2022: kappa all 0.367 early-early 0.370 atom-atom 0.369 early-late 0.364 | all:(f=0.60,s=0.76,c=0.82,n3=3375) atom:(f=0.61,s=0.74,c=0.83,n3=947)
+E6 2023: kappa all 0.355 early-early 0.427 atom-atom 0.369 early-late 0.354 | all:(f=0.59,s=0.76,c=0.81,n3=4918) atom:(f=0.51,s=0.79,c=0.76,n3=1119) late:(f=0.51,s=0.77,c=0.73,n3=662)
+E6 2024: kappa all 0.332 early-early 0.368 atom-atom 0.321 early-late 0.338 | all:(f=0.60,s=0.74,c=0.79,n3=7246) atom:(f=0.68,s=0.70,c=0.86,n3=1349) late:(f=0.60,s=0.75,c=0.80,n3=613)
+E6 2025: kappa all 0.356 early-early 0.375 atom-atom 0.346 early-late 0.348 | all:(f=0.57,s=0.76,c=0.80,n3=11516) early:(f=0.57,s=0.72,c=0.74,n3=874) atom:(f=0.52,s=0.78,c=0.78,n3=2474)
+E6 2026: kappa all 0.109 early-early 0.108 atom-atom 0.113 early-late 0.099 | all:(f=0.55,s=0.63,c=0.50,n3=19469) early:(f=0.14,s=1.01,c=0.35,n3=997) atom:(f=0.72,s=0.60,c=0.60,n3=3713) late:(f=0.91,s=0.63,c=0.81,n3=674)
+pair    all  atom-atom  atom-late  early-atom  early-early  early-late  early-mid  late-late  mid-atom  mid-late  mid-mid
+year                                                                                                                     
+2018  0.372      0.343      0.377       0.340        0.030       0.306      0.102      0.487     0.355     0.405    0.484
+2019  0.398      0.386      0.396       0.453        0.428       0.407      0.302      0.385     0.366     0.409    0.584
+2020  0.341      0.373      0.347       0.352        0.237       0.350      0.338      0.267     0.364     0.303    0.511
+2021  0.319      0.346      0.275       0.357        0.350       0.315      0.295      0.271     0.353     0.299    0.336
+2022  0.367      0.369      0.366       0.350        0.370       0.364      0.347      0.366     0.384     0.374    0.393
+2023  0.355      0.369      0.352       0.393        0.427       0.354      0.488      0.297     0.361     0.326    0.378
+2024  0.332      0.321      0.318       0.345        0.368       0.338      0.333      0.292     0.353     0.346    0.384
+2025  0.356      0.346      0.330       0.365        0.375       0.348      0.373      0.326     0.366     0.342    0.371
+2026  0.109      0.113      0.096       0.112        0.108       0.099      0.131      0.116     0.096     0.117    0.115
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  out = pd.DataFrame({"coef": res.params, "se": se, "t": res.params / se}, index=X.columns)
+  return 1 - self.ssr / self.uncentered_tss
+  return fnb._ureduce(a,
+
+== exp_model (E7) ==
+Δ_atom=0.085 Δ_late=0.095 (penalización de longitud, efectos fijos de manuscrito)
+perfil: mu=0.292; ley de potencia a=1.100 b=1.854; h(0..5)= [0.593, 0.232, 0.13, 0.081, 0.062, 0.047]
+   year     T  in_calibration  obs_share_pre  obs_share_atom  obs_share_late  obs_mean_s  obs_mean_lateness  pred_share_pre  pred_share_atom  pred_share_late  pred_mean_s  pred_mean_lateness
+0  2020  20.0           False          0.234           0.427           0.339      -0.036              5.122           0.393            0.418            0.190        2.295               2.923
+1  2021  16.0           False          0.245           0.501           0.254       0.971              3.157           0.380            0.426            0.193        1.981               2.923
+2  2022  19.0           False          0.298           0.488           0.213       1.649              2.595           0.390            0.420            0.190        2.221               2.923
+3  2023  12.0           False          0.200           0.457           0.343      -0.039              4.092           0.360            0.440            0.200        1.590               2.923
+4  2024  21.0            True          0.312           0.417           0.271       1.216              3.786           0.395            0.416            0.189        2.365               2.923
+5  2025  20.0            True          0.423           0.417           0.160       2.718              2.372           0.393            0.418            0.190        2.295               2.923
+6  2026  21.0            True          0.402           0.420           0.178       2.317              2.651           0.395            0.416            0.189        2.365               2.923
+Conference, δ=0.0025, η=0.0        T*=  7 [7,7] (late-slope variant 9)  V*=0.924  loss@7=0.00% @14=1.00% @28=3.94% @42=7.16%
+Conference, δ=0.005, η=0.0         T*=  5 [5,5] (late-slope variant 6)  V*=0.912  loss@7=0.26% @14=2.81% @28=9.00% @42=15.55%
+Conference, δ=0.01, η=0.0          T*=  3 [3,3] (late-slope variant 4)  V*=0.893  loss@7=1.45% @14=7.10% @28=19.78% @42=33.01%
+Journal, L=0.1, δ=0.0025, η=0.0    T*= 38 [38,38] (late-slope variant 38)  V*=0.542  loss@7=29.28% @14=12.28% @28=1.13% @42=0.13%
+Journal, L=0.1, δ=0.005, η=0.0     T*= 31 [30,31] (late-slope variant 34)  V*=0.492  loss@7=24.73% @14=8.79% @28=0.11% @42=1.56%
+Journal, L=0.1, δ=0.01, η=0.0      T*= 23 [23,23] (late-slope variant 26)  V*=0.416  loss@7=18.22% @14=4.38% @28=0.65% @42=7.00%
+Journal, L=0.3, δ=0.0025, η=0.0    T*= 40 [40,40] (late-slope variant 40)  V*=0.476  loss@7=35.83% @14=15.41% @28=1.69% @42=0.04%
+Journal, L=0.3, δ=0.005, η=0.0     T*= 32 [32,32] (late-slope variant 34)  V*=0.423  loss@7=30.97% @14=11.61% @28=0.36% @42=1.16%
+Journal, L=0.3, δ=0.01, η=0.0      T*= 25 [25,25] (late-slope variant 27)  V*=0.341  loss@7=23.83% @14=6.56% @28=0.27% @42=5.96%
+Journal, L=0.6, δ=0.0025, η=0.0    T*= 42 [42,42] (late-slope variant 42)  V*=0.378  loss@7=45.74% @14=20.19% @28=2.61% @42=0.00%
+Journal, L=0.6, δ=0.005, η=0.0     T*= 35 [35,35] (late-slope variant 35)  V*=0.320  loss@7=40.49% @14=16.00% @28=0.90% @42=0.73%
+Journal, L=0.6, δ=0.01, η=0.0      T*= 27 [27,27] (late-slope variant 30)  V*=0.231  loss@7=32.56% @14=10.17% @28=0.01% @42=4.74%
+Conference, δ=0.0025, η=1.3        T*= 25 [24,25] (late-slope variant 28)  V*=0.903  loss@7=16.51% @14=2.50% @28=0.12% @42=1.98%
+Conference, δ=0.005, η=1.3         T*= 19 [19,19] (late-slope variant 22)  V*=0.857  loss@7=13.34% @14=0.88% @28=1.75% @42=6.95%
+Conference, δ=0.01, η=1.3          T*= 14 [14,14] (late-slope variant 16)  V*=0.787  loss@7=9.36% @14=0.00% @28=7.37% @42=19.23%
+Journal, L=0.1, δ=0.0025, η=1.3    T*= 41 [41,41] (late-slope variant 40)  V*=0.562  loss@7=37.60% @14=16.08% @28=1.98% @42=0.01%
+Journal, L=0.1, δ=0.005, η=1.3     T*= 33 [33,33] (late-slope variant 34)  V*=0.507  loss@7=32.56% @14=12.10% @28=0.48% @42=0.95%
+Journal, L=0.1, δ=0.01, η=1.3      T*= 25 [25,25] (late-slope variant 27)  V*=0.423  loss@7=25.23% @14=6.87% @28=0.20% @42=5.56%
+Journal, L=0.3, δ=0.0025, η=1.3    T*= 43 [43,43] (late-slope variant 42)  V*=0.497  loss@7=44.23% @14=19.29% @28=2.62% @42=0.00%
+Journal, L=0.3, δ=0.005, η=1.3     T*= 35 [35,35] (late-slope variant 34)  V*=0.439  loss@7=38.93% @14=15.04% @28=0.85% @42=0.68%
+Journal, L=0.3, δ=0.01, η=1.3      T*= 27 [27,27] (late-slope variant 29)  V*=0.350  loss@7=31.06% @14=9.28% @28=0.03% @42=4.76%
+Journal, L=0.6, δ=0.0025, η=1.3    T*= 44 [44,44] (late-slope variant 44)  V*=0.399  loss@7=54.22% @14=24.16% @28=3.64% @42=0.05%
+Journal, L=0.6, δ=0.005, η=1.3     T*= 37 [37,37] (late-slope variant 36)  V*=0.338  loss@7=48.59% @14=19.58% @28=1.53% @42=0.39%
+Journal, L=0.6, δ=0.01, η=1.3      T*= 29 [29,29] (late-slope variant 30)  V*=0.242  loss@7=40.04% @14=13.13% @28=0.03% @42=3.78%
+                                     params  T_closed_form  T_numeric  abs_diff
+0                                        {}        31.7493    31.7488    0.0004
+1                           {'delta': 0.01}        24.5489    24.5488    0.0000
+2                                {'L': 0.6}        33.9144    33.9144    0.0001
+3                  {'lam_a': 0.2, 'm': 2.0}        19.5097    19.5095    0.0002
+4  {'qbar': 1.5, 'delta': 0.0025, 'm': 1.5}        42.3290    42.3294    0.0003
+lam_a     0.0500               0.0988               0.2000              
+delta     0.0025 0.0050 0.0100 0.0025 0.0050 0.0100 0.0025 0.0050 0.0100
+Delta eta                                                               
+0.050 0.0   60.0   49.0   36.0   40.0   32.0   25.0   23.0   20.0   16.0
+      1.3   60.0   51.0   37.0   41.0   34.0   26.0   26.0   22.0   18.0
+0.085 0.0   60.0   49.0   35.0   40.0   32.0   25.0   24.0   20.0   16.0
+      1.3   60.0   51.0   37.0   42.0   35.0   27.0   29.0   23.0   19.0
+0.150 0.0   60.0   49.0   35.0   39.0   32.0   25.0   24.0   20.0   16.0
+      1.3   60.0   52.0   38.0   44.0   36.0   28.0   32.0   26.0   21.0
+0.300 0.0   60.0   47.0   34.0   39.0   32.0   24.0   24.0   20.0   16.0
+      1.3   60.0   54.0   39.0   49.0   39.0   30.0   41.0   31.0   24.0
+delta      0.0025  0.0050  0.0100
+Delta eta                        
+0.050 0.0     5.0     3.0     3.0
+      1.3    19.0    15.0    11.0
+0.085 0.0     7.0     5.0     3.0
+      1.3    24.0    18.0    14.0
+0.150 0.0     8.0     6.0     5.0
+      1.3    30.0    23.0    17.0
+0.300 0.0    10.0     8.0     6.0
+      1.3    40.0    30.0    23.0
+    T  share_atom  share_late  mean_s  q50_s
+0  12       0.186       0.140   3.984    4.0
+1  16       0.157       0.123   5.697    6.0
+2  21       0.136       0.109   7.794    7.0
+3  28       0.117       0.098  10.676   10.0
+4  45       0.095       0.082  17.513   16.0
+
+== proofs_sympy ==
+OK   P1 riesgo h(s) idéntico para T=12 y T=45 en los días comunes
+OK   P1 riesgo creciente hacia el plazo (s de 11 a 0)
+OK   P2 dE[q]/dT = Δ(1−π)λe^{−λT} > 0
+OK   P2 d²E[q]/dT² = −Δ(1−π)λ²e^{−λT} < 0
+OK   P2 límite T→∞: q̄ − Δπφ
+OK   P3 la CPO se reduce a e^{−λT}[λ(q̄+L+δm)+δ−λδT] = δ
+OK   P3 T* de forma cerrada satisface la CPO (3 puntos numéricos, |resid|<1e-9)
+OK   P3 V''(T*) < 0 y dV cambia de signo una sola vez (unicidad)
+OK   P3 forma cerrada de model.py coincide con la simbólica
+OK   P4 dT*/dδ < 0 en 300 puntos aleatorios
+OK   P4 dT*/dL > 0
+OK   P4 dT*/dq̄ > 0
+OK   P4 dT*/dλ_a < 0
+signos (min, max, n): {'delta': (np.float64(-1.0), np.float64(-1.0), 300), 'L': (np.float64(1.0), np.float64(1.0), 300), 'qbar': (np.float64(1.0), np.float64(1.0), 300), 'lambda_a': (np.float64(-1.0), np.float64(-1.0), 300)}
+
+13/13 comprobaciones superadas
