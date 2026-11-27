@@ -1,0 +1,22 @@
+F1 pooled slope of log hazard on T: {'slope': 0.0549, 'se': 0.0318, 'lo': -0.0268, 'hi': 0.1366, 'n': 7} | % per day: 5.64 | days with a significant slope: 1 of 12
+F2 implied vs observed slopes (power tail): {'q25': (0.005, 0.013), 'q50': (0.021, 0.071), 'q75': (0.09, 0.2), 'q90': (0.294, 0.395), 'share_final48h': (-0.262, -0.603), 'share_late': (-0.119, -1.16)}
+F3 pass-through of the median: on-time {'passthrough': 0.929, 'lo': 0.854, 'hi': 1.004} | all reviews {'passthrough': 0.942, 'lo': 0.873, 'hi': 1.01} | on-time without 2023 {'passthrough': 0.899, 'lo': 0.73, 'hi': 1.069, 'n': 6}
+F4 eta against single cohorts: {2020: 0.54, 2021: 0.46, 2022: 0.95, 2024: 1.63, 2025: 1.23, 2026: 1.02}
+F4 eta by contrast: {'2024-2026 (as in the calibration)': 1.16, '2020-2022 (before the 2024 form)': 0.74, '2018-2022': 0.77, '2022 (adjacent, same scores)': 0.95}
+ eta  0.0025  0.005  0.01
+0.00       7      5     3
+0.25      11      8     6
+0.50      16     11     8
+0.70      19     14     9
+1.00      22     16    12
+1.30      25     19    14
+1.60      26     20    16
+2.00      27     22    17
+F5 slopes with the published deadlines and windows: {'q25': (0.052, -0.039, 0.143), 'q50': (0.11, -0.008, 0.228), 'q75': (0.227, -0.086, 0.54), 'q90': (0.407, 0.052, 0.761), 'share_final48h': (-0.941, -3.386, 1.503), 'share_late': (-1.578, -5.623, 2.467)} | pass-through of the median {'est': 0.89, 'lo': 0.772, 'hi': 1.008}
+F6 final-24-hour score coefficient: {'2018-2026': (0.17, 0.013), '2018-2025 (1-10 scale)': (0.13, 0.015), '2026 (0-10 scale in steps of two)': (0.224, 0.023)} | deviation: {'2018-2026': (-0.01, 0.008), '2018-2025 (1-10 scale)': (-0.017, 0.01), '2026 (0-10 scale in steps of two)': (-0.001, 0.015)}
+   reviews by timing bin (regression sample): {'early': 43269, 'mid': 29595, 'last48h': 32018, 'last24h': 58536, 'late': 45959} n 209377
+F7 shortfall capped at 1: conference {'q_uncapped': {5: 5.0, 25: 11.0, 50: 18.0, 75: 25.0, 95: 33.0}, 'q_capped': {5: 5.0, 25: 11.0, 50: 18.0, 75: 25.0, 95: 33.0}, 'share_changed': 0.0, 'max_change': 0} | journal {'q_uncapped': {5: 23.0, 25: 30.0, 50: 37.0, 75: 46.0, 95: 60.0}, 'q_capped': {5: 23.0, 25: 30.0, 50: 37.0, 75: 46.0, 95: 60.0}, 'share_changed': 0.0, 'max_change': 0} | Table 10 conference [{'eta': 0.0, 'delta': 0.0025, 'uncapped': 7, 'capped': 7}, {'eta': 0.0, 'delta': 0.005, 'uncapped': 5, 'capped': 5}, {'eta': 0.0, 'delta': 0.01, 'uncapped': 3, 'capped': 3}, {'eta': 1.3, 'delta': 0.0025, 'uncapped': 25, 'capped': 25}, {'eta': 1.3, 'delta': 0.005, 'uncapped': 19, 'capped': 19}, {'eta': 1.3, 'delta': 0.01, 'uncapped': 14, 'capped': 14}]
+F8 journal optimum with the functional form drawn: {5: 21.0, 25: 32.0, 50: 39.0, 75: 51.0, 95: 90.0} at 90: 0.097 <=7: 0.003 | variance share of the form: 0.111
+   by form: {'exponential': {5: 29.0, 25: 33.0, 50: 37.0, 75: 42.0, 95: 48.0}, 'hyperbolic': {5: 26.0, 25: 32.0, 50: 39.0, 75: 48.0, 95: 61.0}, 'logarithmic': {5: 23.0, 25: 31.0, 50: 41.0, 75: 56.0, 95: 87.0}, 'linear': {5: 13.0, 25: 28.0, 50: 50.0, 75: 90.0, 95: 90.0}}
+F9 late hazard by days late (1, 5, 10, 20, 40): {'1.0': [0.608, 0.608, 0.608, 0.608, 0.608], '0.9': [0.548, 0.496, 0.435, 0.334, 0.213], '0.7': [0.449, 0.335, 0.241, 0.157, 0.154]}
+written output/revision/final_checks.json
